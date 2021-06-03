@@ -353,6 +353,22 @@ header{
 }
 
 .nav-link-socials{
+    margin: 8px 8px;
 
+    svg{
+        width: 36px;
+        height: 36px;
+
+        path{
+            transition: .5s ease;
+        }
+        
+        &:hover{
+
+            path{
+                stroke: $primary-normal;
+            }
+        }
+    }
 
 }
