@@ -181,3 +181,74 @@ $container-s: 540px;
         width: 100%;
     }
 }
+
+// PEOPLES SECTION
+
+.list-item{
+    list-style: none;
+    position: relative;
+
+    padding: 8px 8px 8px 74px;
+    margin-bottom: 48px;
+
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+
+        display: block;
+
+        width: 64px;
+        height: 64px;
+
+
+
+    }
+}
+
+// BEST SECTION
+
+.best{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    border-radius: 50px;
+
+    background-color: $white-normal;
+
+    @include responsive(s){
+        flex-direction: column;
+    }
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 122px;
+        height: 31px;
+        top: 0; 
+        left: 50%;
+
+        background-image: url('../../svg/entail.svg');
+        transform: translate(-50%,0);
+
+
+    }
+}
+
+.best-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include responsive(s){
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 24px;
+    }
+}

@@ -7,6 +7,7 @@
     <title>Projeto Nubank</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/svg-inject.min.js"></script>
 </head>
@@ -126,18 +127,18 @@
         <img class="svg-bg-home" src="svg/bg-home.svg" onload="SVGInject(this)"/>
     </div>
 
-    <main class="container  hero pt-5 pb-5 pl-3 pr-3">
-        <div class="flex-item-1  pt-3">
+    <main class="container hero pt-5 pb-5 pl-3 pr-3">
+        <div class="flex-item-1 pt-3">
             <h1>Ser Nubank é reinventar sua vida financeira.</h1>
             <p class="mt-2 mb-2">Conta com rendimento acima da poupança, cartão de crédito sem anuidade e o melhor: resolva tudo pelo App.</p>
             <div class="flex-start">
                 <a class="btn" href="http://">Quero ser Nubank</a>
-                <a class="ml-2 mr-2" href="http://"><img src="svg/appstore.svg" onload="SVGInject(this)"/></a>
-                <a href="http://"><img src="svg/playstore.svg" onload="SVGInject(this)"/></a>
+                <a style="width: 48px;" class="ml-2 mr-2" href="http://"><img src="svg/appstore.svg" onload="SVGInject(this)"/></a>
+                <a style="width: 48px;" href="http://"><img src="svg/playstore.svg" onload="SVGInject(this)"/></a>
     
             </div>
         </div>
-        <div class="flex-item-3 flex-center div-card  pt-4 pb-4">
+        <div class="flex-item-3 flex-center div-card pt-4 pb-4">
             <img class="icon-card-hero dropshadow" src="svg/icon-card.svg" onload="SVGInject(this)"/>
             <img class="icon-mobile-hero dropshadow" src="svg/icon-mobile.svg" onload="SVGInject(this)"/>
             <img class="icon-contactless-hero dropshadow" src="svg/icon-contactless.svg" onload="SVGInject(this)"/>
@@ -150,10 +151,150 @@
 
     </main>
 
+    <!--SECTION PEOPLE-->
+
+    <div class="container pb-3 pl-3 pr-3">
+        <div class="flex-item-4 flex-column">
+            <h5>Para Todos</h5>
+            <h2 class="mb-2">Completo.</h2>
+            <p class="mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea quidem quibusdam fuga iusto saepe itaque reprehenderit tenetur voluptatum tempora quo sequi rerum excepturi, dolore vero incidunt dolores voluptatem explicabo.
+            </p>
+
+            <ul class="list mb-4">
+                <li class="list-item bg-icon-check">
+                    <strong>100% gratuito.</strong>
+                    <p>Isso mesmo, você não paga nada para abrir sua conta.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <strong>Sem taxas ou cobranças.</strong>
+                    <p>Isso mesmo, você não paga nada para abrir sua conta.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <strong>O melhor suporte de todos.</strong>
+                    <p>Isso mesmo, você não paga nada para abrir sua conta.</p>
+                </li>
+            </ul>
+            <p class="flex-start">
+                <a class="link btn" href="http://">Confira os beneficios.</a>
+            </p>
+
+        </div>
+
+        <div class="flex-item-3 pl-1 pr-1">
+            <img id="people-1-item" src="svg/svg-people1.svg" onload="SVGInject(this)"/>
+        </div>
+        <div class="flex-item-1 flex-column">
+            <img id="people-2-item" src="svg/svg-people2.svg" onload="SVGInject(this)"/>
+            <img id="people-3-item" src="svg/svg-people3.svg" onload="SVGInject(this)"/>
+        </div>
+
+
+    </div>
+
+    <!--SECTION BEST-->
+
+    <section class="container pl-3 pr-3 pb-3">
+        <div class="best pl-3 pr-3 pt-4 pb-4">
+            <div class="flex-item-auto">
+                <h5>O MELHOR</h5>
+                <h2>Por que Nubank?</h2>
+            </div>
+            <div class="best-item flex-item-auto relative">
+                <img class="icon w-auto" src="svg/icon-cash.svg" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Conta que rende mais que a poupança.</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img class="icon w-auto" src="svg/icon-transfer.svg" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Conta que rende mais que a poupança.</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img class="icon w-auto" src="svg/icon-card.svg" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Conta que rende mais que a poupança.</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img class="icon w-auto" src="svg/icon-phone.svg" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Conta que rende mais que a poupança.</p>
+            </div>
+         
+
+        </div>
+
+    </section>
+
+    <!--SECTION SLIDER-->
+
+    <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o roxinho</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo">
+                        <img class="w-auto mb-1" src="svg/photo-profile-1.svg" onload="SVGInject(this)"/>
+                    </div>
+                    <h4>Jorge Silva</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam quam, fugit suscipit quis animi nemo nesciunt ipsa tempora enim atque, quasi minima repellendus soluta. Iusto dicta natus facilis cumque?</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo">
+                        <img class="w-auto mb-1" src="svg/photo-profile-2.svg" onload="SVGInject(this)"/>
+                    </div>
+                    <h4>Jorge Silva</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam quam, fugit suscipit quis animi nemo nesciunt ipsa tempora enim atque, quasi minima repellendus soluta. Iusto dicta natus facilis cumque?</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo">
+                        <img class="w-auto mb-1" src="svg/photo-profile-3.svg" onload="SVGInject(this)"/>
+                    </div>
+                    <h4>Jorge Silva</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam quam, fugit suscipit quis animi nemo nesciunt ipsa tempora enim atque, quasi minima repellendus soluta. Iusto dicta natus facilis cumque?</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo">
+                        <img class="w-auto mb-1" src="svg/photo-profile-4.svg" onload="SVGInject(this)"/>
+                    </div>
+                    <h4>Jorge Silva</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam quam, fugit suscipit quis animi nemo nesciunt ipsa tempora enim atque, quasi minima repellendus soluta. Iusto dicta natus facilis cumque?</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo">
+                        <img class="w-auto mb-1" src="svg/photo-profile-1.svg" onload="SVGInject(this)"/>
+                    </div>
+                    <h4>Jorge Silva</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam quam, fugit suscipit quis animi nemo nesciunt ipsa tempora enim atque, quasi minima repellendus soluta. Iusto dicta natus facilis cumque?</p>
+                </div>
+                
+            </div>
+
+            
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+
     <!--JS-->
 
     <script src="js/app.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{ // script de configuração do swiper (slider)
+            slidesPerView: 'auto',
+            spaceBeteween: 40,
+            grabCursor: true,
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation:{
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
 
