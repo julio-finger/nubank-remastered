@@ -550,6 +550,154 @@
   }
 }
 
+.screen1 {
+  -webkit-animation: screen1 10s ease infinite alternate;
+          animation: screen1 10s ease infinite alternate;
+}
+
+.screen2 {
+  -webkit-animation: screen2 10s ease infinite alternate;
+          animation: screen2 10s ease infinite alternate;
+}
+
+.screen3 {
+  -webkit-animation: screen3 10s ease infinite alternate;
+          animation: screen3 10s ease infinite alternate;
+}
+
+.screen4 {
+  -webkit-animation: screen4 10s ease infinite alternate;
+          animation: screen4 10s ease infinite alternate;
+}
+
+.screen5 {
+  -webkit-animation: screen5 10s ease infinite alternate;
+          animation: screen5 10s ease infinite alternate;
+}
+
+@-webkit-keyframes screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  80%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  80%, 100% {
+    opacity: 1;
+  }
+}
+
+.icon1 {
+  -webkit-animation: bg-home-rect 3s ease-in 1s infinite alternate;
+          animation: bg-home-rect 3s ease-in 1s infinite alternate;
+}
+
+.icon2 {
+  -webkit-animation: bg-home-rect 3s ease 0.5s infinite alternate;
+          animation: bg-home-rect 3s ease 0.5s infinite alternate;
+}
+
+.icon3 {
+  -webkit-animation: bg-home-rect 3s ease-out 1s infinite alternate;
+          animation: bg-home-rect 3s ease-out 1s infinite alternate;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -967,8 +1115,8 @@ a:hover {
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
 
-.bg-icon-mobile::after {
-  background-image: url("../../svg/icon-mobile.svg");
+.bg-icon-time::after {
+  background-image: url("../../svg/icon-time.svg");
   background-size: cover;
   -webkit-filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
           filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
@@ -977,7 +1125,22 @@ a:hover {
   cursor: pointer;
 }
 
-.bg-icon-mobile:hover::after {
+.bg-icon-time:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("../../svg/icon-config.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+          filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.bg-icon-config:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -997,6 +1160,21 @@ a:hover {
 .bg-icon-check:hover::after {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.bg-icon-mobile::after {
+  background-image: url("../../svg/icon-mobile2.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+          filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.bg-icon-mobile:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .icon {
