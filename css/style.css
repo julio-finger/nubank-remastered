@@ -698,6 +698,92 @@
           animation: bg-home-rect 3s ease-out 1s infinite alternate;
 }
 
+.fignu3-card-verse {
+  -webkit-animation: fignu3-verse 3s ease-in 1s infinite alternate;
+          animation: fignu3-verse 3s ease-in 1s infinite alternate;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+}
+
+.fignu3-card-front {
+  -webkit-animation: fignu3-front 3s linear 2s infinite alternate;
+          animation: fignu3-front 3s linear 2s infinite alternate;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+}
+
+.fignu3-shadow {
+  -webkit-animation: fignu3-shadow 3s linear 2s infinite alternate;
+          animation: fignu3-shadow 3s linear 2s infinite alternate;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes fignu3-verse {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0) rotate(5deg);
+            transform: translate3d(0, 30px, 0) rotate(5deg);
+  }
+}
+
+@keyframes fignu3-verse {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0) rotate(5deg);
+            transform: translate3d(0, 30px, 0) rotate(5deg);
+  }
+}
+
+@-webkit-keyframes fignu3-front {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0) rotate(-5deg);
+            transform: translate3d(0, 30px, 0) rotate(-5deg);
+  }
+}
+
+@keyframes fignu3-front {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0) rotate(-5deg);
+            transform: translate3d(0, 30px, 0) rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.4;
+  }
+  100% {
+    fill-opacity: 0.9;
+  }
+}
+
+@keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.4;
+  }
+  100% {
+    fill-opacity: 0.9;
+  }
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -1173,6 +1259,36 @@ a:hover {
 }
 
 .bg-icon-mobile:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-contactless::after {
+  background-image: url("../../svg/icon-contactless.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+          filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.bg-icon-contactless:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url("../../svg/icon-card.svg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+          filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)), drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)), drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)), drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.bg-icon-card:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
